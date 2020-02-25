@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+  PSC discrepancy submitted
+{% endblock %}
+{% block beforeContent %}{% endblock %}
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {% set buttonHref = "Reference: ACC0001" %}
+      {{ govukPanel({
+        titleText: "Accounts submitted",
+        html: buttonHref
+      }) }}
+      <h2 class="govuk-heading-m">What happens next?</h2>
+      <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non ipsum id turpis tincidunt euismod id non ex. Morbi dignissim ligula vehicula vulputate imperdiet. Cras tempus mauris sit amet odio hendrerit euismod.
+      </p>
+      <p class="govuk-body">Aliquam viverra tincidunt tristique. Ut porta venenatis pretium. Curabitur malesuada tellus sed facilisis varius. Proin vitae felis interdum, ultricies felis in, finibus urna. Donec sem ex, pellentesque vitae sollicitudin vel, semper at velit.
+      </p>
+      <p class="govuk-body">
+        <a href="#">What did you think of this service?</a>
+        (takes 30 seconds)</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
